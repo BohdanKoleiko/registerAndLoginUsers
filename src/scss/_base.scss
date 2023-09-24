@@ -1,0 +1,50 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Nunito Sans", sans-serif;
+   font-size: 16px;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+ul {
+   list-style-type: none;
+}
+
+ul li {
+   position: relative;
+
+   &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0%;
+      height: 2px;
+      background-color: $second-color;
+
+      transition: all 0.3s ease-in-out;
+   }
+
+   &:hover {
+      &::before {
+         width: 100%;
+      }
+   }
+}
+
+.container {
+   max-width: 1200px;
+   padding: 0 30px;
+   margin: 0 auto;
+}
+
+.alert {
+   border-color: $alert !important;
+   outline: $alert;
+}

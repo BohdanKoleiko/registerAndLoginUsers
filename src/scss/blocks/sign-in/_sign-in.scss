@@ -1,0 +1,101 @@
+.login {
+   display: flex;
+   height: 100vh;
+
+   &__photo,
+   &__form {
+      flex-basis: 50%;
+   }
+
+   &__photo {
+      background: url("../images/tihiy_ocean_165.jpg") center center/cover
+         no-repeat;
+   }
+
+   &__form {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      background-color: $bg2;
+   }
+
+   &__back {
+      position: relative;
+      padding-left: 25px;
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 0;
+         transform: translateY(-50%);
+         background: url("../images/arrow-left.svg") center center/contain
+            no-repeat;
+         width: 20px;
+         height: 18px;
+      }
+   }
+}
+
+.form {
+   background-color: $bg3;
+   padding: 30px 20px 40px;
+   margin-bottom: 20px;
+   box-shadow: -6px 8px 14px 6px #c7c7c7;
+
+   &__username,
+   &__password {
+      display: flex;
+      flex-direction: column;
+      color: $txt-color;
+      margin-bottom: 15px;
+      width: 276px;
+
+      input {
+         border: 1px solid $boder-color1;
+         padding: 8px 10px;
+      }
+
+      label {
+         font-size: 16px;
+      }
+   }
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+         background-color: cornflowerblue;
+         line-height: 30px;
+         padding: 0 15px;
+         color: $second-color;
+         border: none;
+         box-shadow: -2px 4px 5px #36558c;
+         cursor: pointer;
+         transition: all 0.2s linear;
+         border-radius: 2px;
+
+         &:hover {
+            box-shadow: none;
+         }
+
+         &:active {
+            box-shadow: inset -2px 4px 5px #36558c;
+         }
+      }
+   }
+
+   &__remember-me {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      font-size: 14px;
+
+      input[type="checkbox"] {
+         width: 15px;
+         height: 15px;
+         cursor: pointer;
+      }
+   }
+}
