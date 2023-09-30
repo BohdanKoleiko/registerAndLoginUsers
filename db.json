@@ -1,14 +1,22 @@
 {
-   "users": {
-      "admins": [
-         {
-            "login": "Bohdan",
-            "password": "Ekfnbv2018",
-            "id": 1
-         }
-      ],
-      "registeredUsers": []
-   },
-   "messages": [],
-   "replies": []
+  "users": [
+    {
+      "username": "Bohdan",
+      "password": "Ekfnbv2018",
+      "role": "admin",
+      "icon": "../img/avatar.jpg",
+      "loged": true,
+      "id": 1
+    },
+    {
+      "username": "Liza",
+      "password": "12345678",
+      "role": "user",
+      "icon": "../img/person-fill.svg",
+      "loged": false,
+      "id": 2
+    }
+  ],
+  "messages": [],
+  "replies": []
 }
