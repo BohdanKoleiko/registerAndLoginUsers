@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+      <title>Sign in</title>
+      <link rel="stylesheet" href="../css/style.min.css">
+   </head>
+   <body>
+      <main>
+         <div class="login">
+            <div class="login__photo"></div>
+            <div class="login__form">
+               <div class="login__form-wrapper">
+                  <form action="#" class="form">
+                     <div class="form__username">
+                        <label for="username">Username or Email Address</label>
+                        <input type="text" name="username" id="username" autocomplete="username" autofocus>
+                     </div>
+   
+                     <div class="form__password">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" autocomplete="current-password">
+                     </div>
+   
+                     <div class="form__inner">
+                        <label for="remember" class="form__remember-me">
+                           <input type="checkbox" name="remember" id="remember">
+                           <span>Remember Me</span>
+                        </label>
+      
+                        <button>Log in</button>
+                     </div>
+                  </form>
+                  
+                  <div class="login__back"><a href="/">Back to home page</a></div>
+               </div>
+            </div>
+         </div>
+      </main>
+
+      <script src="../js/main.js" type="module"></script>
+   </body>
+</html>

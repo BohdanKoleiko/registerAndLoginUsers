@@ -1,0 +1,14 @@
+{
+   "users": {
+      "admins": [
+         {
+            "login": "Bohdan",
+            "password": "Ekfnbv2018",
+            "id": 1
+         }
+      ],
+      "registeredUsers": []
+   },
+   "messages": [],
+   "replies": []
+}
